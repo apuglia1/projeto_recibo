@@ -1,5 +1,12 @@
 import geocoder
 
+from datetime import date
+
+hoje = date.today()
+
+hoje = hoje.strftime("%d/%m/%Y")
+
+
 nome1 = input("Insira o seu nome completo: ")
 nome2 = input("Insira o nome da pessoa que realizou o pagamento: ")
 valor = input("Insira o valor que foi recebido: ")
@@ -27,7 +34,7 @@ print("")
 print("")
 print("")
 
-print(local_recibo.city, ",")
+print(local_recibo.city, ",", hoje)
 
 print("")
 print("")
